@@ -38,6 +38,7 @@ body {
 
 header {
     height: 40%;
+    background-color: #000;
     background-image: var(--image-cabarepic);
     background-position: center;
     background-size: cover;
@@ -92,6 +93,6 @@ footer h2 {
     }
 
     main {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 }
