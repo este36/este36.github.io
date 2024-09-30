@@ -1,0 +1,89 @@
+:root {
+    --light-color: #ddd;
+    --dark-color: #000;
+
+    --primary-color: #555;
+    --secondary-color: #999;
+
+    --font-color: #723a25;
+    --image-cabarepic: url("images/Cabarepic_avril_21.jpg");
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: var(--font-color);
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--dark-color);
+}
+
+.container-main {
+    height: 100vh;
+    background-color: #000;
+    width: 70%;
+}
+
+
+header {
+    height: 40%;
+    background-image: var(--image-cabarepic);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+h1 {
+    font-size: 40px;
+    margin-right: 4px;
+}
+
+h1, .container-socials a, main a {
+    color: var(--light-color);
+    font-weight: 500;
+    font-style: oblique;
+}
+
+main {
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer h2 {
+    font-weight: 400;
+    margin: 2rem 3rem;
+}
+
+
+@media (max-width: 1200px) {
+    .container-main {
+      width: 100%;
+      background-color: #000;
+    }
+    header {
+        height: 30%;
+    }
+}
