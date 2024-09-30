@@ -6,6 +6,7 @@
     --secondary-color: #999;
 
     --font-color: #723a25;
+    --font-color-lighter: #c96f4e;
     --image-cabarepic: url("images/Cabarepic_avril_21.jpg");
 }
 
@@ -54,6 +55,12 @@ h1 {
     margin-right: 10px;
 }
 
+.container-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 h1, .container-socials a, main a {
     color: var(--light-color);
     font-weight: 500;
@@ -64,20 +71,23 @@ main {
     margin: 2rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
-.container-socials {
-    display: flex;
-    flex-direction: column;
+footer h2, h2  a{
+    font-size: 0.8rem;
+    text-decoration: none;
 }
 
 
-footer h2 {
+footer h2{
     font-weight: 400;
-    margin: 2rem 3rem;
+    margin: 0rem 3rem;
 }
 
+.credits-photo:hover{
+    color: var(--font-color-lighter);
+}
 
 @media (max-width: 1200px) {
     .container-main {
