@@ -40,7 +40,7 @@
           window.parser = parser;
           window.parse = (ireal) => {
             console.log("-----");
-            console.log("uri decoded: " + decodeURL(ireal));
+            console.log("uri decoded: " + decodeURI(ireal));
             window.playlist = new parser.Playlist(ireal);
           };
     </script>
