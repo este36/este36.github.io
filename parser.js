@@ -167,8 +167,8 @@ function unscramble(s) {
 }
 
 function scramble(s) {
-  // Remplacer dans l’ordre inverse du decode
-  s = s.replace(/\| x/g, 'Kcl').replace(/ \|/g, 'LZ').replace(/ {3}/g, 'XyQ');
+  // Remplacer dans lordre inverse du decode
+  s = s.replace(/ {3}/g, 'XyQ').replace(/ \|/g, 'LZ').replace(/\| x/g, 'Kcl');
 
   let r = '', p;
 
