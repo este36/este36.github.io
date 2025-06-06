@@ -39,6 +39,8 @@
           import * as parser from './parser.js';
           window.parser = parser;
           window.parse = (ireal) => {
+            console.log("-----");
+            console.log("uri decoded: " + decodeURL(ireal));
             window.playlist = new parser.Playlist(ireal);
           };
     </script>
